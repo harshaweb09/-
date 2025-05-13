@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Happy Birthday Amma - A Special Celebration</title>
+    <meta
+      name="description"
+      content="A heartfelt digital birthday celebration for my beloved mother, Amma, filled with love, memories, and wishes."
+    />
+    <meta
+      name="keywords"
+      content="birthday, mother, amma, celebration, family, love, memories, wishes, tribute"
+    />
+    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/index.html" />
+    <!-- !!! REPLACE with actual URL !!! -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags (for Facebook, WhatsApp, Instagram, etc.) -->
+    <meta property="og:title" content="Happy Birthday Amma! ❤️" />
+    <meta
+      property="og:description"
+      content="Join us in celebrating Amma's special day with heartfelt wishes and cherished memories."
+    />
+    <meta property="og:image" content="amma-main.jpg" />
+    <!-- Recommended: 1200x630px. Replace if you have a dedicated social image -->
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/index.html" />
+    <!-- !!! REPLACE with actual URL !!! -->
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Happy Birthday Amma! ❤️" />
+    <meta
+      name="twitter:description"
+      content="A special digital tribute for Amma's birthday, filled with love and memories."
+    />
+    <meta name="twitter:image" content="amma-main.jpg" />
+    <!-- Replace if you have a dedicated social image -->
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+    <!-- Optional: Your Twitter handle -->
+
+    <!-- Favicon Placeholder (replace with your actual favicon) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Example for a PNG favicon: <link rel="icon" href="favicon.png" type="image/png"> -->
+
+    <meta name="theme-color" content="#140021" />
+    <!-- Theme color for browser UI -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #f9d976;
+        --gold-bright: #ffeeaa; /* A brighter gold for flowers/highlights */
+        --gold-light: rgba(255, 215, 0, 0.5);
+        --gold-dark: #f39f86;
+        --purple-dark: #0a0014;
+        --purple-light: #140021;
+        --white: #fff;
+        --white-80: rgba(255, 255, 255, 0.8);
+        --white-50: rgba(255, 255, 255, 0.5);
+        --white-20: rgba(255, 255, 255, 0.2);
+        --white-10: rgba(255, 255, 255, 0.1);
+        --black-80: rgba(0, 0, 0, 0.8);
+        --black-70: rgba(0, 0, 0, 0.7);
+        --black-30: rgba(0, 0, 0, 0.3);
+        --black-20: rgba(0, 0, 0, 0.2);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Raleway", sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--purple-dark) 0%,
+          var(--purple-light) 100%
+        );
+        color: var(--white);
+        overflow-x: hidden;
+        min-height: 100vh;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+      }
+
+      .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+      }
+
+      .photo-frame {
+        position: relative;
+        width: 200px;
+        height: 250px;
+        margin: 0 auto 2rem;
+        border: 3px solid rgba(255, 215, 0, 0.4);
+        border-radius: 15px;
+        padding: 12px;
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.2),
+          inset 0 0 15px rgba(255, 215, 0, 0.1);
+        transition: transform 0.7s ease, box-shadow 0.7s ease;
+        background: var(--black-20);
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+        will-change: transform, box-shadow;
+      }
+
+      .photo-frame:hover {
+        transform: scale(1.05) rotate(2deg);
+        box-shadow: 0 0 35px rgba(255, 215, 0, 0.4),
+          inset 0 0 20px rgba(255, 215, 0, 0.2);
+      }
+
+      .photo-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 8px;
+      }
+
+      .photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+        will-change: transform;
+      }
+
+      .photo-frame:hover .photo {
+        transform: scale(1.08);
+      }
+
+      .photo-frame::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          to bottom right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0) 40%,
+          rgba(255, 255, 255, 0.6) 50%,
+          rgba(255, 255, 255, 0) 60%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(45deg);
+        z-index: 10;
+        animation: shine 3s infinite;
+        will-change: top, left;
+      }
+
+      @keyframes shine {
+        0% {
+          top: -100%;
+          left: -100%;
+        }
+        100% {
+          top: 100%;
+          left: 100%;
+        }
+      }
+
+      h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        margin-bottom: 1rem;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        letter-spacing: 2px;
+        background: linear-gradient(to right, var(--gold), var(--gold-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s ease-in-out infinite alternate;
+        transition: text-shadow 0.3s ease;
+      }
+      h1:hover {
+        text-shadow: 0 0 15px var(--gold), 0 0 25px var(--gold-light);
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 5px rgba(255, 215, 0, 0.5),
+            0 0 10px rgba(255, 215, 0, 0.3);
+        }
+        to {
+          text-shadow: 0 0 10px rgba(255, 215, 0, 0.7),
+            0 0 20px rgba(255, 215, 0, 0.5);
+        }
+      }
+
+      .subtitle {
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: clamp(1rem, 3vw, 1.3rem);
+        margin-bottom: 2rem;
+        color: var(--white-80);
+      }
+
+      .birthday-message {
+        font-family: "Dancing Script", cursive;
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
+        color: var(--gold);
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: fadeIn 1.5s forwards 1s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .quotes-container {
+        margin: 0 auto 2rem;
+        max-width: 700px;
+        position: relative;
+        min-height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: var(--white-10);
+        box-shadow: 0 5px 15px var(--black-20);
+      }
+
+      .quote {
+        position: absolute;
+        width: 100%;
+        transition: opacity 1.2s ease, transform 1.2s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        text-align: center;
+        padding: 0 2rem;
+        font-style: italic;
+        display: none;
+        left: 0;
+        right: 0;
+      }
+
+      .quote.active {
+        opacity: 1;
+        transform: translateY(0);
+        position: relative;
+        display: block;
+        animation: quoteFadeIn 1s ease forwards;
+      }
+
+      @keyframes quoteFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .quote p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .quote cite {
+        font-size: 0.9rem;
+        color: var(--gold);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      .memory-gallery {
+        margin: 2rem auto;
+        position: relative;
+      }
+
+      .gallery-title {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.8rem;
+        color: var(--gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .coverflow-gallery-container {
+        position: relative;
+        width: 100%;
+        max-width: 700px;
+        margin: 2rem auto;
+        height: 350px;
+        perspective: 1200px;
+        overflow: hidden;
+      }
+
+      .coverflow-carousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+
+      .coverflow-item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 220px;
+        height: 300px;
+        margin-left: -110px;
+        margin-top: -150px;
+        background: var(--white-10);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transform-origin: center center;
+        transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+        will-change: transform, opacity, box-shadow, border-color;
+      }
+
+      .coverflow-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+      }
+
+      .coverflow-item .memory-shine-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          160deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0) 40%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+      }
+
+      .coverflow-item.active .memory-shine-overlay {
+        opacity: 1;
+      }
+
+      .coverflow-item.active {
+        border-color: var(--gold);
+        box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3),
+          0 5px 15px rgba(0, 0, 0, 0.4);
+      }
+
+      .coverflow-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .coverflow-nav-btn {
+        background: var(--gold-light);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--purple-dark);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 0 15px;
+      }
+      .coverflow-nav-btn svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+
+      .coverflow-nav-btn:hover {
+        background-color: var(--gold);
+        transform: scale(1.1);
+      }
+
+      .coverflow-indicators {
+        display: flex;
+        gap: 8px;
+      }
+
+      .coverflow-indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--white-20);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .coverflow-indicator.active {
+        background-color: var(--gold);
+        transform: scale(1.2);
+      }
+
+      .expanded-view {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--black-80);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+      }
+
+      .expanded-view.active {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease;
+      }
+
+      .expanded-image {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px var(--black-30);
+        transform: scale(0.95);
+        transition: transform 0.3s ease;
+      }
+      .expanded-view.active .expanded-image {
+        transform: scale(1);
+      }
+
+      .close-expanded {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--white-20);
+        color: var(--white);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.5rem;
+        line-height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s, transform 0.3s;
+      }
+
+      .close-expanded:hover {
+        background: var(--white-50);
+        transform: rotate(90deg);
+      }
+
+      .diamond-divider {
+        width: 150px;
+        height: 30px;
+        margin: 2rem auto;
+        position: relative;
+      }
+
+      .diamond-divider::before {
+        content: "❀";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: var(--gold-light);
+      }
+
+      .diamond-divider::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          var(--gold-light),
+          transparent
+        );
+      }
+
+      .wishes-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(
+          135deg,
+          var(--gold) 0%,
+          var(--gold-dark) 100%
+        );
+        color: var(--purple-light);
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        box-shadow: 0 5px 15px rgba(249, 217, 118, 0.3);
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+
+      .wishes-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(249, 217, 118, 0.4);
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        color: var(--white-50);
+        font-size: 0.9rem;
+      }
+
+      .flowers-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .flower-shape {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        animation: simplerFallDown 15s linear infinite;
+        will-change: transform, opacity;
+      }
+
+      @keyframes simplerFallDown {
+        0% {
+          transform: translateY(-25px) scale(0.7) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.9;
+          transform: translateY(0px) scale(1) rotate(45deg);
+        }
+        90% {
+          opacity: 0.9;
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(100vh) scale(0.6) rotate(360deg);
+        }
+      }
+
+      .birthday-cake {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 2rem auto;
+      }
+
+      .cake-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .cake {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 60px;
+        background: linear-gradient(to right, var(--gold), var(--gold-dark));
+        border-radius: 10px 10px 0 0;
+      }
+
+      .cake-top {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 25px;
+        background: linear-gradient(to right, #ffecb3, #ffe082);
+        border-radius: 10px 10px 0 0;
+      }
+
+      .candle {
+        position: absolute;
+        bottom: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 20px;
+        background-color: white;
+        border-radius: 3px 3px 0 0;
+      }
+
+      .flame {
+        position: absolute;
+        bottom: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 15px;
+        background: radial-gradient(
+          ellipse at center,
+          #ffef9b 0%,
+          #ffcc33 50%,
+          #ff9900 100%
+        );
+        border-radius: 50% 50% 20% 20%;
+        animation: flicker 1s infinite alternate;
+        box-shadow: 0 0 15px #ff9900, 0 0 25px rgba(255, 153, 0, 0.5);
+        will-change: opacity, transform;
+      }
+
+      @keyframes flicker {
+        0%,
+        100% {
+          opacity: 1;
+          transform: translateX(-50%) scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: translateX(-50%) scale(0.9);
+        }
+      }
+
+      .confetti-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      @keyframes confettiFall {
+        0% {
+          opacity: 1;
+          transform: translateY(-20px) rotate(0deg);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(100vh) rotate(720deg);
+        }
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-70);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 1001;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-content {
+        background: var(--black-80);
+        padding: 2rem;
+        border-radius: 15px;
+        max-width: 90%;
+        width: 450px;
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        animation: fadeInModal 0.5s forwards;
+        text-align: center;
+      }
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .welcome-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 0, 20, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 1002;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeInOverlay 1s ease;
+      }
+      @keyframes fadeInOverlay {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .welcome-card {
+        background: linear-gradient(
+          135deg,
+          rgba(20, 0, 33, 0.9) 0%,
+          rgba(72, 20, 94, 0.9) 100%
+        );
+        border-radius: 20px;
+        padding: 3rem 2rem;
+        text-align: center;
+        position: relative;
+        width: 90%;
+        max-width: 450px;
+        box-shadow: 0 20px 40px var(--black-30),
+          inset 0 0 0 2px rgba(255, 215, 0, 0.2);
+        overflow: hidden;
+        transform: translateY(20px);
+        animation: floatIn 1s forwards 0.5s;
+        opacity: 0;
+      }
+
+      @keyframes floatIn {
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .welcome-sparkle {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+        background: radial-gradient(
+          circle,
+          transparent 20%,
+          rgba(72, 20, 94, 0.9) 70%
+        );
+        opacity: 0.1;
+        animation: welcomeSpin 15s linear infinite;
+        z-index: 0;
+      }
+
+      .welcome-sparkle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-conic-gradient(
+          rgba(255, 215, 0, 0.5) 0deg 10deg,
+          transparent 10deg 20deg
+        );
+        mix-blend-mode: overlay;
+      }
+
+      @keyframes welcomeSpin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .welcome-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .welcome-card h2 {
+        font-family: "Dancing Script", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        background: linear-gradient(to right, var(--gold), var(--gold-dark));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      .welcome-card p {
+        color: var(--white-80);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+
+      .welcome-decoration {
+        width: 80%;
+        height: 1px;
+        margin: 0 auto 2rem;
+        background: linear-gradient(
+          to right,
+          transparent,
+          var(--gold-light),
+          transparent
+        );
+        position: relative;
+      }
+
+      .welcome-decoration::before {
+        content: "❀";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+        color: var(--gold-light);
+      }
+
+      #startCelebration {
+        background: linear-gradient(
+          135deg,
+          var(--gold) 0%,
+          var(--gold-dark) 100%
+        );
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        border: none;
+        color: var(--purple-light);
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(249, 217, 118, 0.2);
+      }
+
+      #startCelebration:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(249, 217, 118, 0.3);
+      }
+
+      #startCelebration:active {
+        transform: translateY(-1px);
+      }
+
+      .button-sparkles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .button-sparkles::before,
+      .button-sparkles::after {
+        content: "";
+        position: absolute;
+        top: -100%;
+        height: 300%;
+        width: 100%;
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          var(--white-20) 30%,
+          var(--white-50) 50%,
+          var(--white-20) 70%,
+          transparent 100%
+        );
+        transform: rotate(25deg);
+        transition: all 0.5s ease;
+      }
+
+      .button-sparkles::before {
+        left: -100%;
+      }
+
+      .button-sparkles::after {
+        left: 100%;
+      }
+
+      #startCelebration:hover .button-sparkles::before {
+        left: 100%;
+      }
+
+      #startCelebration:hover .button-sparkles::after {
+        left: -100%;
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .modal-content {
+          padding: 1.5rem;
+          max-width: 90%;
+        }
+        .photo-frame {
+          transform: rotate(-3deg);
+          margin-bottom: 3rem;
+        }
+        .photo-frame:hover {
+          transform: rotate(3deg) scale(1.05);
+        }
+        .coverflow-gallery-container {
+          height: 300px;
+        }
+        .coverflow-item {
+          width: 180px;
+          height: 240px;
+          margin-left: -90px;
+          margin-top: -120px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .quotes-container {
+          min-height: 180px;
+          padding: 15px;
+        }
+        .quote p {
+          font-size: 1.1rem;
+        }
+        .welcome-card {
+          padding: 2rem 1.5rem;
+        }
+        .welcome-card h2 {
+          font-size: 2rem;
+        }
+        .welcome-card p {
+          font-size: 0.9rem;
+        }
+        #startCelebration {
+          padding: 0.8rem 2rem;
+          font-size: 1rem;
+        }
+        .modal-content {
+          padding: 1.5rem 1rem;
+          max-width: 95%;
+        }
+        .coverflow-gallery-container {
+          height: 250px;
+        }
+        .coverflow-item {
+          width: 150px;
+          height: 200px;
+          margin-left: -75px;
+          margin-top: -100px;
+        }
+        .coverflow-nav-btn {
+          width: 35px;
+          height: 35px;
+          margin: 0 10px;
+        }
+        .coverflow-nav-btn svg {
+          width: 20px;
+          height: 20px;
+        }
+        .gallery-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome-overlay" id="welcomeOverlay">
+      <div class="welcome-card">
+        <div class="welcome-sparkle"></div>
+        <div class="welcome-content">
+          <h2>Happy Birthday Amma! ✨</h2>
+          <p>Click the button below to start your special celebration</p>
+          <div class="welcome-decoration"></div>
+          <button id="startCelebration">
+            <span>Begin Celebration</span>
+            <div class="button-sparkles"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stars" id="stars"></div>
+      <div class="flowers-container" id="flowers-container"></div>
+      <div class="confetti-container" id="confetti-container"></div>
+
+      <main class="content">
+        <div class="photo-frame">
+          <div class="photo-container">
+            <img
+              src="amma-main.jpg"
+              alt="A beautiful photo of Amma for her birthday celebration"
+              class="photo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <h1>Happy Birthday Amma ❤️</h1>
+        <p class="subtitle">
+          The guiding light of our family, the warmth of our hearts
+        </p>
+
+        <div class="birthday-message">May 14, 2025</div>
+
+        <div class="birthday-cake">
+          <div class="cake-container">
+            <div class="cake"></div>
+            <div class="cake-top"></div>
+            <div class="candle"></div>
+            <div class="flame"></div>
+          </div>
+        </div>
+
+        <div class="diamond-divider"></div>
+
+        <section
+          class="quotes-container"
+          aria-labelledby="quotes-section-title"
+        >
+          <h2 id="quotes-section-title" class="visually-hidden">
+            Heartfelt Quotes for Amma
+          </h2>
+          <div class="quote active">
+            <p>
+              "God could not be everywhere, and therefore he made mothers. You
+              are the embodiment of divine love, patience, and strength. I am
+              blessed to call you Amma."
+            </p>
+            <cite>— Your fortunate child</cite>
+          </div>
+          <div class="quote">
+            <p>
+              "Mothers hold their children's hands for a short while, but their
+              hearts forever. Your love has been my anchor through every storm,
+              Amma."
+            </p>
+            <cite>— Forever grateful</cite>
+          </div>
+          <div class="quote">
+            <p>
+              "The most beautiful word on the lips of mankind is 'Mother.'
+              You've given meaning to that word through your unconditional love
+              and countless sacrifices."
+            </p>
+            <cite>— With deepest reverence</cite>
+          </div>
+          <div class="quote">
+            <p>
+              "To the world, you may be one person, but to me, you are my world.
+              Your wisdom guides me, your love sustains me, and your faith
+              inspires me every day."
+            </p>
+            <cite>— Your adoring child</cite>
+          </div>
+          <div class="quote">
+            <p>
+              "A mother's arms are made of tenderness and children sleep soundly
+              in them. In your embrace, I've always found my peace, my strength,
+              and my home."
+            </p>
+            <cite>— With boundless love</cite>
+          </div>
+        </section>
+        <style>
+          .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+        </style>
+
+        <section class="memory-gallery" aria-labelledby="gallery-main-title">
+          <h3 class="gallery-title" id="gallery-main-title">
+            Precious Memories Together
+          </h3>
+
+          <div class="coverflow-gallery-container">
+            <div class="coverflow-carousel" id="coverflowCarousel">
+              <!-- Carousel items will be dynamically added by JavaScript -->
+            </div>
+            <div class="coverflow-nav">
+              <button
+                class="coverflow-nav-btn prev"
+                id="coverflowPrevBtn"
+                aria-label="Previous Photo"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+              <div class="coverflow-indicators" id="coverflowIndicators">
+                <!-- Indicators will be added by JavaScript -->
+              </div>
+              <button
+                class="coverflow-nav-btn next"
+                id="coverflowNextBtn"
+                aria-label="Next Photo"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <button class="wishes-button" id="wishButton">
+          Click for a Surprise!
+        </button>
+
+        <div class="diamond-divider"></div>
+
+        <footer>❤️ With all my love, your devoted child ❤️</footer>
+      </main>
+    </div>
+
+    <!-- Surprise Modal -->
+    <div class="modal" id="birthdayModal">
+      <div class="modal-content">
+        <h2
+          style="
+            font-family: 'Dancing Script', cursive;
+            color: var(--gold);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+          "
+        >
+          A Little Surprise Just For You!
+        </h2>
+        <p
+          style="
+            color: var(--white-80);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+          "
+        >
+          Dearest Amma, hope this brings an extra sparkle to your special day!
+          Thinking of you and sending all my love.
+        </p>
+        <p
+          style="
+            font-family: 'Dancing Script', cursive;
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+          "
+        >
+          🎉 Happy Birthday! 🎉
+        </p>
+        <button
+          id="closeSurpriseModal"
+          style="
+            background: linear-gradient(
+              135deg,
+              var(--gold) 0%,
+              var(--gold-dark) 100%
+            );
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            color: var(--purple-light);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+          "
+          onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Expanded view modal for gallery -->
+    <div class="expanded-view" id="expandedView">
+      <img
+        id="expandedImage"
+        class="expanded-image"
+        src=""
+        alt="Expanded memory from gallery"
+      />
+      <button
+        class="close-expanded"
+        id="closeExpanded"
+        aria-label="Close expanded image"
+      >
+        &times;
+      </button>
+    </div>
+
+    <audio id="birthdayAudio" preload="metadata">
+      <source src="Happy-birthday.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      const debounce = (func, wait) => {
+        let timeout;
+        return function (...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setupAudio();
+        rotateQuotes();
+        setupExpandedViewControls();
+        // setupScrollToTopButton(); // Removed call
+
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => {
+            createStars();
+            setupCoverflowGallery();
+            setupWishButton();
+          });
+          setTimeout(() => {
+            createFallingFlowers();
+          }, 1000);
+        } else {
+          setTimeout(() => {
+            createStars();
+            setupCoverflowGallery();
+            setupWishButton();
+            createFallingFlowers();
+          }, 100);
+        }
+      });
+
+      function createStars() {
+        const starsContainer = document.getElementById("stars");
+        if (!starsContainer) return;
+        const starsCount = window.innerWidth < 768 ? 100 : 200;
+        const fragment = document.createDocumentFragment();
+        const keyframeStyle = document.createElement("style");
+        const starStyles = [];
+
+        for (let i = 0; i < starsCount; i++) {
+          const star = document.createElement("div");
+          const size = Math.random() * 3;
+          const opacity = Math.random() * 0.8 + 0.2;
+          const top = Math.random() * 100;
+          const left = Math.random() * 100;
+          const animationDuration = Math.random() * 5 + 3;
+          const animationName = `twinkle-${i}`;
+
+          star.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            top: ${top}%;
+            left: ${left}%;
+            opacity: ${opacity};
+            animation: ${animationName} ${animationDuration}s infinite alternate;
+          `;
+
+          const fromOpacity = Math.random() * 0.5 + 0.1;
+          const toOpacity = Math.random() * 0.5 + 0.5;
+          const toScale = Math.random() * 0.5 + 1;
+
+          starStyles.push(`
+            @keyframes ${animationName} {
+              0% { opacity: ${fromOpacity}; transform: scale(1); }
+              100% { opacity: ${toOpacity}; transform: scale(${toScale}); }
+            }
+          `);
+          fragment.appendChild(star);
+        }
+        starsContainer.appendChild(fragment);
+        keyframeStyle.textContent = starStyles.join("\n");
+        document.head.appendChild(keyframeStyle);
+      }
+
+      function rotateQuotes() {
+        const quotes = document.querySelectorAll(".quote");
+        if (quotes.length === 0) return;
+        let currentIndex = 0;
+        let rotateTimer;
+
+        function startRotation() {
+          rotateTimer = setInterval(() => {
+            requestAnimationFrame(() => {
+              quotes.forEach((quote) => quote.classList.remove("active"));
+              currentIndex = (currentIndex + 1) % quotes.length;
+              quotes[currentIndex].classList.add("active");
+            });
+          }, 8000);
+        }
+        startRotation();
+        window.addEventListener("unload", () => clearInterval(rotateTimer));
+      }
+
+      function createFallingFlowers() {
+        const container = document.getElementById("flowers-container");
+        if (!container) return;
+        const initialFlowerCount = 35;
+        const flowerEmojis = ["✿", "❀", "✽", "❁", "✾", "❃"];
+        let flowerInterval;
+
+        function generateFlower() {
+          createFlower(container, flowerEmojis, false);
+        }
+
+        for (let i = 0; i < initialFlowerCount; i++) {
+          setTimeout(generateFlower, i * 400);
+        }
+
+        flowerInterval = setInterval(generateFlower, 2000);
+        window.addEventListener("unload", () => clearInterval(flowerInterval));
+      }
+
+      function createFlowerBurst() {
+        const container = document.getElementById("flowers-container");
+        if (!container) return;
+        const flowerEmojis = ["✿", "❀", "✽", "❁", "✾", "❃"];
+        const burstCount = 20;
+
+        for (let i = 0; i < burstCount; i++) {
+          setTimeout(() => createFlower(container, flowerEmojis, true), i * 40);
+        }
+      }
+
+      function createFlower(container, flowerEmojis, isBurst) {
+        const flower = document.createElement("div");
+        flower.className = "flower-shape";
+
+        const size = Math.random() * (isBurst ? 20 : 15) + (isBurst ? 12 : 10);
+        const posX = Math.random() * 100;
+        const delay = isBurst ? Math.random() * 0.5 : Math.random() * 2;
+        const duration = Math.random() * (isBurst ? 6 : 8) + (isBurst ? 8 : 12);
+        const emoji =
+          flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
+
+        flower.style.cssText += `
+          width: ${size}px;
+          height: ${size}px;
+          left: ${posX}%;
+          top: -${size}px; 
+          font-size: ${size}px;
+          color: var(--gold-bright); 
+          animation-delay: ${delay}s;
+          animation-duration: ${duration}s;
+        `;
+        flower.innerHTML = emoji;
+        container.appendChild(flower);
+
+        setTimeout(() => {
+          if (flower && flower.parentNode) {
+            flower.parentNode.removeChild(flower);
+          }
+        }, (duration + delay + 1) * 1000);
+      }
+
+      function setupWishButton() {
+        const wishButton = document.getElementById("wishButton");
+        const surpriseModal = document.getElementById("birthdayModal");
+        const closeModalBtn = document.getElementById("closeSurpriseModal");
+
+        if (!wishButton || !surpriseModal || !closeModalBtn) return;
+
+        wishButton.addEventListener("click", function () {
+          surpriseModal.style.display = "flex";
+          createConfetti();
+        });
+
+        closeModalBtn.addEventListener("click", function () {
+          surpriseModal.style.display = "none";
+          createConfetti();
+          createFlowerBurst();
+        });
+
+        document.addEventListener("click", function (event) {
+          if (event.target === surpriseModal) {
+            surpriseModal.style.display = "none";
+          }
+        });
+        document.addEventListener("keydown", function (event) {
+          if (
+            event.key === "Escape" &&
+            surpriseModal.style.display === "flex"
+          ) {
+            surpriseModal.style.display = "none";
+          }
+        });
+      }
+
+      function createConfetti() {
+        const container = document.getElementById("confetti-container");
+        if (!container) return;
+        const colors = [
+          "#f9d976",
+          "#f39f86",
+          "#ffcb7d",
+          "#ff9e9e",
+          "#ffd5d5",
+          "#fff",
+          "var(--gold-bright)",
+          "var(--gold)",
+        ];
+        const shapes = ["circle", "square", "triangle"];
+        const confettiCount = 200;
+
+        container.innerHTML = "";
+        const batchSize = 40;
+        const batches = Math.ceil(confettiCount / batchSize);
+
+        for (let batch = 0; batch < batches; batch++) {
+          setTimeout(() => {
+            const fragment = document.createDocumentFragment();
+            const count = Math.min(
+              batchSize,
+              confettiCount - batch * batchSize
+            );
+            for (let i = 0; i < count; i++) {
+              const confetti = document.createElement("div");
+              const size = Math.random() * 10 + 6;
+              const posX = Math.random() * 100;
+              const delay = Math.random() * 2.5;
+              const duration = Math.random() * 3.5 + 3.5;
+              const color = colors[Math.floor(Math.random() * colors.length)];
+              const shape = shapes[Math.floor(Math.random() * shapes.length)];
+
+              let styleText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${posX}%;
+                background-color: ${color};
+                opacity: 1; 
+                animation: confettiFall ${duration}s ease-in ${delay}s forwards;
+                will-change: transform, opacity;
+              `;
+
+              if (shape === "circle") {
+                styleText += "border-radius: 50%;";
+              } else if (shape === "triangle") {
+                styleText += `
+                  width: 0; height: 0; background-color: transparent;
+                  border-left: ${size / 2}px solid transparent;
+                  border-right: ${size / 2}px solid transparent;
+                  border-bottom: ${size}px solid ${color};`;
+              }
+              confetti.style.cssText = styleText;
+              fragment.appendChild(confetti);
+              setTimeout(() => {
+                if (confetti && confetti.parentNode) {
+                  confetti.parentNode.removeChild(confetti);
+                }
+              }, (duration + delay) * 1000 + 100);
+            }
+            container.appendChild(fragment);
+          }, batch * 40);
+        }
+      }
+
+      function setupExpandedViewControls() {
+        const expandedView = document.getElementById("expandedView");
+        const closeExpandedBtn = document.getElementById("closeExpanded");
+
+        if (!expandedView || !closeExpandedBtn) return;
+
+        closeExpandedBtn.addEventListener("click", () => {
+          expandedView.classList.remove("active");
+        });
+
+        expandedView.addEventListener("click", (e) => {
+          if (e.target === expandedView) {
+            expandedView.classList.remove("active");
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && expandedView.classList.contains("active")) {
+            expandedView.classList.remove("active");
+          }
+        });
+      }
+
+      function setupCoverflowGallery() {
+        const carousel = document.getElementById("coverflowCarousel");
+        const prevBtn = document.getElementById("coverflowPrevBtn");
+        const nextBtn = document.getElementById("coverflowNextBtn");
+        const indicatorsContainer = document.getElementById(
+          "coverflowIndicators"
+        );
+        const expandedView = document.getElementById("expandedView");
+        const expandedImage = document.getElementById("expandedImage");
+
+        const images = [
+          { src: "amma-1.jpg", alt: "Amma" },
+          { src: "amma-2.jpg", alt: "Amma" },
+          { src: "amma-3.jpg", alt: "Amma" },
+          { src: "amma-4.jpg", alt: "Amma" },
+          { src: "amma-5.jpg", alt: "Amma" },
+          { src: "amma-6.jpg", alt: "Amma" },
+          { src: "amma-7.jpg", alt: "Amma" },
+          { src: "amma-8.jpg", alt: "Amma" },
+          { src: "amma-9.jpg", alt: "Amma" },
+          { src: "amma-10.jpg", alt: "Amma" },
+          { src: "amma-11.jpg", alt: "Amma" },
+          { src: "amma-12.jpg", alt: "Amma" },
+          { src: "amma-13.jpg", alt: "Amma" },
+          { src: "amma-14.jpg", alt: "Amma" },
+          { src: "amma-15.jpg", alt: "Amma" },
+        ];
+
+        if (
+          !carousel ||
+          !prevBtn ||
+          !nextBtn ||
+          !indicatorsContainer ||
+          images.length === 0 ||
+          !expandedView ||
+          !expandedImage
+        ) {
+          console.warn(
+            "Coverflow gallery elements not found or no images provided."
+          );
+          return;
+        }
+
+        let currentIndex = 0;
+        let autoRotateInterval;
+        const numItems = images.length;
+
+        function buildCarousel() {
+          carousel.innerHTML = "";
+          indicatorsContainer.innerHTML = "";
+
+          images.forEach((imgData, index) => {
+            const item = document.createElement("div");
+            item.className = "coverflow-item";
+            item.dataset.index = index;
+
+            const img = document.createElement("img");
+            img.src = imgData.src;
+            img.alt = imgData.alt;
+            img.loading = "lazy";
+
+            const shineOverlay = document.createElement("div");
+            shineOverlay.className = "memory-shine-overlay";
+
+            item.appendChild(img);
+            item.appendChild(shineOverlay);
+            carousel.appendChild(item);
+
+            item.addEventListener("click", () => {
+              if (index === currentIndex) {
+                expandedImage.src = imgData.src;
+                expandedImage.alt = imgData.alt;
+                expandedView.classList.add("active");
+              } else {
+                goToIndex(index);
+              }
+            });
+
+            const indicator = document.createElement("div");
+            indicator.className = "coverflow-indicator";
+            indicator.dataset.index = index;
+            indicator.addEventListener("click", () => {
+              stopAutoRotate();
+              goToIndex(index);
+            });
+            indicatorsContainer.appendChild(indicator);
+          });
+          positionItems();
+          updateIndicators();
+        }
+
+        function positionItems() {
+          const items = document.querySelectorAll(".coverflow-item");
+          const spacing = 120;
+          const perspectiveStrength = 0.5;
+
+          items.forEach((item, i) => {
+            const relativeIndex = i - currentIndex;
+            let newX, newZ, newRotateY, newOpacity, newScale;
+
+            if (i === currentIndex) {
+              newX = 0;
+              newZ = 150;
+              newRotateY = 0;
+              newOpacity = 1;
+              newScale = 1;
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+              newX = relativeIndex * spacing;
+              newZ = -Math.abs(relativeIndex) * spacing * perspectiveStrength;
+              newRotateY = relativeIndex > 0 ? -45 : 45;
+              newOpacity = 1 - Math.abs(relativeIndex) * 0.25;
+              newScale = 1 - Math.abs(relativeIndex) * 0.15;
+            }
+            newOpacity = Math.max(0.2, newOpacity);
+            newScale = Math.max(0.5, newScale);
+
+            item.style.transform = `translateX(${newX}px) translateZ(${newZ}px) rotateY(${newRotateY}deg) scale(${newScale})`;
+            item.style.opacity = newOpacity;
+            item.style.zIndex = numItems - Math.abs(relativeIndex);
+          });
+        }
+
+        function updateIndicators() {
+          const indicators = indicatorsContainer.querySelectorAll(
+            ".coverflow-indicator"
+          );
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle("active", index === currentIndex);
+          });
+        }
+
+        function goToIndex(index) {
+          currentIndex = (index + numItems) % numItems;
+          positionItems();
+          updateIndicators();
+        }
+
+        function startAutoRotate() {
+          stopAutoRotate();
+          autoRotateInterval = setInterval(() => {
+            goToIndex(currentIndex + 1);
+          }, 5000);
+        }
+
+        function stopAutoRotate() {
+          clearInterval(autoRotateInterval);
+        }
+
+        buildCarousel();
+        startAutoRotate();
+
+        prevBtn.addEventListener("click", () => {
+          stopAutoRotate();
+          goToIndex(currentIndex - 1);
+          startAutoRotate();
+        });
+        nextBtn.addEventListener("click", () => {
+          stopAutoRotate();
+          goToIndex(currentIndex + 1);
+          startAutoRotate();
+        });
+
+        const galleryContainer = document.querySelector(
+          ".coverflow-gallery-container"
+        );
+        if (galleryContainer) {
+          galleryContainer.addEventListener("mouseenter", stopAutoRotate);
+          galleryContainer.addEventListener("mouseleave", startAutoRotate);
+        }
+
+        document.addEventListener("keydown", (e) => {
+          if (expandedView.classList.contains("active")) return;
+          const galleryRect = carousel.getBoundingClientRect();
+          const isVisible =
+            galleryRect.top < window.innerHeight && galleryRect.bottom >= 0;
+          if (!isVisible) return;
+
+          if (e.key === "ArrowLeft") {
+            stopAutoRotate();
+            goToIndex(currentIndex - 1);
+            startAutoRotate();
+          } else if (e.key === "ArrowRight") {
+            stopAutoRotate();
+            goToIndex(currentIndex + 1);
+            startAutoRotate();
+          }
+        });
+      }
+
+      function setupAudio() {
+        const audio = document.getElementById("birthdayAudio");
+        const welcomeOverlay = document.getElementById("welcomeOverlay");
+        const startButton = document.getElementById("startCelebration");
+
+        if (!audio || !welcomeOverlay || !startButton) return;
+        audio.preload = "none";
+
+        startButton.addEventListener("click", function () {
+          audio.load();
+          welcomeOverlay.style.animation = "fadeOut 1s forwards";
+          audio
+            .play()
+            .then(() => {
+              createFlowerBurst();
+            })
+            .catch((e) => console.warn("Audio playback failed:", e));
+          setTimeout(() => {
+            if (welcomeOverlay.parentNode) {
+              welcomeOverlay.remove();
+            }
+          }, 1000);
+        });
+
+        audio.addEventListener("ended", function () {
+          setTimeout(() => {
+            audio.play().catch((e) => console.warn("Audio replay failed:", e));
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>
