@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- 
+      PROFESSIONAL REMINDER: 
+      - Replace "YOUR_WEBSITE_URL_HERE" with your actual website URL in the canonical and Open Graph tags below.
+      - Replace "favicon.ico" with your actual favicon file and update the href/type if needed.
+    -->
 
     <!-- SEO Meta Tags -->
     <title>Happy Birthday Amma - A Special Celebration</title>
@@ -14,40 +20,28 @@
       name="keywords"
       content="birthday, mother, amma, celebration, family, love, memories, wishes, tribute"
     />
-    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/index.html" />
-    <!-- !!! REPLACE with actual URL !!! -->
+    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/index.html" /> <!-- !!! REPLACE with actual URL !!! -->
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph Meta Tags (for Facebook, WhatsApp, Instagram, etc.) -->
     <meta property="og:title" content="Happy Birthday Amma! ❤️" />
-    <meta
-      property="og:description"
-      content="Join us in celebrating Amma's special day with heartfelt wishes and cherished memories."
-    />
-    <meta property="og:image" content="amma-main.jpg" />
-    <!-- Recommended: 1200x630px. Replace if you have a dedicated social image -->
-    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/index.html" />
-    <!-- !!! REPLACE with actual URL !!! -->
+    <meta property="og:description" content="Join us in celebrating Amma's special day with heartfelt wishes and cherished memories." />
+    <meta property="og:image" content="amma-main.jpg" /> <!-- Recommended: 1200x630px. Replace if you have a dedicated social image -->
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/index.html" /> <!-- !!! REPLACE with actual URL !!! -->
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Happy Birthday Amma! ❤️" />
-    <meta
-      name="twitter:description"
-      content="A special digital tribute for Amma's birthday, filled with love and memories."
-    />
-    <meta name="twitter:image" content="amma-main.jpg" />
-    <!-- Replace if you have a dedicated social image -->
-    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
-    <!-- Optional: Your Twitter handle -->
+    <meta name="twitter:description" content="A special digital tribute for Amma's birthday, filled with love and memories." />
+    <meta name="twitter:image" content="amma-main.jpg" /> <!-- Replace if you have a dedicated social image -->
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> --> <!-- Optional: Your Twitter handle -->
 
     <!-- Favicon Placeholder (replace with your actual favicon) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Example for a PNG favicon: <link rel="icon" href="favicon.png" type="image/png"> -->
 
-    <meta name="theme-color" content="#140021" />
-    <!-- Theme color for browser UI -->
+    <meta name="theme-color" content="#140021"> <!-- Theme color for browser UI -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -701,7 +695,7 @@
         width: 100%;
         height: 100%;
         pointer-events: none;
-        z-index: 1;
+        z-index: 1; 
       }
 
       @keyframes confettiFall {
@@ -725,7 +719,7 @@
         background-color: var(--black-70);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        z-index: 1001;
+        z-index: 1001; 
         align-items: center;
         justify-content: center;
       }
@@ -760,7 +754,7 @@
         background-color: rgba(10, 0, 20, 0.85);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        z-index: 1002;
+        z-index: 1002; 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1140,7 +1134,7 @@
           </div>
         </section>
         <style>
-          .visually-hidden {
+          .visually-hidden { 
             position: absolute;
             width: 1px;
             height: 1px;
@@ -1291,23 +1285,22 @@
         setupAudio();
         rotateQuotes();
         setupExpandedViewControls();
-        // setupScrollToTopButton(); // Removed call
 
         if ("requestIdleCallback" in window) {
           requestIdleCallback(() => {
             createStars();
             setupCoverflowGallery();
-            setupWishButton();
+            setupWishButton(); 
           });
           setTimeout(() => {
-            createFallingFlowers();
+            createFallingFlowers(); 
           }, 1000);
         } else {
           setTimeout(() => {
             createStars();
             setupCoverflowGallery();
-            setupWishButton();
-            createFallingFlowers();
+            setupWishButton(); 
+            createFallingFlowers(); 
           }, 100);
         }
       });
@@ -1377,33 +1370,44 @@
         window.addEventListener("unload", () => clearInterval(rotateTimer));
       }
 
-      function createFallingFlowers() {
+      function createFallingFlowers() { 
         const container = document.getElementById("flowers-container");
         if (!container) return;
-        const initialFlowerCount = 35;
+        const initialFlowerCount = 35; 
         const flowerEmojis = ["✿", "❀", "✽", "❁", "✾", "❃"];
         let flowerInterval;
 
         function generateFlower() {
-          createFlower(container, flowerEmojis, false);
+          createFlower(container, flowerEmojis, false); 
         }
 
         for (let i = 0; i < initialFlowerCount; i++) {
-          setTimeout(generateFlower, i * 400);
+          setTimeout(generateFlower, i * 400); 
         }
 
-        flowerInterval = setInterval(generateFlower, 2000);
+        flowerInterval = setInterval(generateFlower, 2000); 
         window.addEventListener("unload", () => clearInterval(flowerInterval));
       }
-
-      function createFlowerBurst() {
+      
+      function createGentleFlowerIntro() {
         const container = document.getElementById("flowers-container");
         if (!container) return;
         const flowerEmojis = ["✿", "❀", "✽", "❁", "✾", "❃"];
-        const burstCount = 20;
+        const introCount = 7; 
+
+        for (let i = 0; i < introCount; i++) {
+          setTimeout(() => createFlower(container, flowerEmojis, false), i * 200); 
+        }
+      }
+
+      function createFlowerBurst() { 
+        const container = document.getElementById("flowers-container");
+        if (!container) return;
+        const flowerEmojis = ["✿", "❀", "✽", "❁", "✾", "❃"];
+        const burstCount = 20; 
 
         for (let i = 0; i < burstCount; i++) {
-          setTimeout(() => createFlower(container, flowerEmojis, true), i * 40);
+          setTimeout(() => createFlower(container, flowerEmojis, true), i * 40); 
         }
       }
 
@@ -1411,12 +1415,11 @@
         const flower = document.createElement("div");
         flower.className = "flower-shape";
 
-        const size = Math.random() * (isBurst ? 20 : 15) + (isBurst ? 12 : 10);
+        const size = Math.random() * (isBurst ? 20 : 15) + (isBurst ? 12 : 10); 
         const posX = Math.random() * 100;
-        const delay = isBurst ? Math.random() * 0.5 : Math.random() * 2;
+        const delay = isBurst ? Math.random() * 0.5 : Math.random() * 2; 
         const duration = Math.random() * (isBurst ? 6 : 8) + (isBurst ? 8 : 12);
-        const emoji =
-          flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
+        const emoji = flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
 
         flower.style.cssText += `
           width: ${size}px;
@@ -1447,13 +1450,13 @@
 
         wishButton.addEventListener("click", function () {
           surpriseModal.style.display = "flex";
-          createConfetti();
+          createConfetti(); 
         });
 
         closeModalBtn.addEventListener("click", function () {
           surpriseModal.style.display = "none";
-          createConfetti();
-          createFlowerBurst();
+          createConfetti(); 
+          createFlowerBurst(); 
         });
 
         document.addEventListener("click", function (event) {
@@ -1475,20 +1478,14 @@
         const container = document.getElementById("confetti-container");
         if (!container) return;
         const colors = [
-          "#f9d976",
-          "#f39f86",
-          "#ffcb7d",
-          "#ff9e9e",
-          "#ffd5d5",
-          "#fff",
-          "var(--gold-bright)",
-          "var(--gold)",
+          "#f9d976", "#f39f86", "#ffcb7d", "#ff9e9e", "#ffd5d5", "#fff",
+          "var(--gold-bright)", "var(--gold)" 
         ];
         const shapes = ["circle", "square", "triangle"];
-        const confettiCount = 200;
+        const confettiCount = 200; 
 
         container.innerHTML = "";
-        const batchSize = 40;
+        const batchSize = 40; 
         const batches = Math.ceil(confettiCount / batchSize);
 
         for (let batch = 0; batch < batches; batch++) {
@@ -1500,10 +1497,10 @@
             );
             for (let i = 0; i < count; i++) {
               const confetti = document.createElement("div");
-              const size = Math.random() * 10 + 6;
+              const size = Math.random() * 10 + 6; 
               const posX = Math.random() * 100;
-              const delay = Math.random() * 2.5;
-              const duration = Math.random() * 3.5 + 3.5;
+              const delay = Math.random() * 2.5; 
+              const duration = Math.random() * 3.5 + 3.5; 
               const color = colors[Math.floor(Math.random() * colors.length)];
               const shape = shapes[Math.floor(Math.random() * shapes.length)];
 
@@ -1536,7 +1533,7 @@
               }, (duration + delay) * 1000 + 100);
             }
             container.appendChild(fragment);
-          }, batch * 40);
+          }, batch * 40); 
         }
       }
 
@@ -1574,35 +1571,21 @@
         const expandedImage = document.getElementById("expandedImage");
 
         const images = [
-          { src: "amma-1.jpg", alt: "Amma" },
-          { src: "amma-2.jpg", alt: "Amma" },
-          { src: "amma-3.jpg", alt: "Amma" },
-          { src: "amma-4.jpg", alt: "Amma" },
-          { src: "amma-5.jpg", alt: "Amma" },
-          { src: "amma-6.jpg", alt: "Amma" },
-          { src: "amma-7.jpg", alt: "Amma" },
-          { src: "amma-8.jpg", alt: "Amma" },
-          { src: "amma-9.jpg", alt: "Amma" },
-          { src: "amma-10.jpg", alt: "Amma" },
-          { src: "amma-11.jpg", alt: "Amma" },
-          { src: "amma-12.jpg", alt: "Amma" },
-          { src: "amma-13.jpg", alt: "Amma" },
-          { src: "amma-14.jpg", alt: "Amma" },
+          { src: "amma-1.jpg", alt: "Amma" }, { src: "amma-2.jpg", alt: "Amma" },
+          { src: "amma-3.jpg", alt: "Amma" }, { src: "amma-4.jpg", alt: "Amma" },
+          { src: "amma-5.jpg", alt: "Amma" }, { src: "amma-6.jpg", alt: "Amma" },
+          { src: "amma-7.jpg", alt: "Amma" }, { src: "amma-8.jpg", alt: "Amma" },
+          { src: "amma-9.jpg", alt: "Amma" }, { src: "amma-10.jpg", alt: "Amma" },
+          { src: "amma-11.jpg", alt: "Amma" }, { src: "amma-12.jpg", alt: "Amma" },
+          { src: "amma-13.jpg", alt: "Amma" }, { src: "amma-14.jpg", alt: "Amma" },
           { src: "amma-15.jpg", alt: "Amma" },
         ];
 
         if (
-          !carousel ||
-          !prevBtn ||
-          !nextBtn ||
-          !indicatorsContainer ||
-          images.length === 0 ||
-          !expandedView ||
-          !expandedImage
+          !carousel || !prevBtn || !nextBtn || !indicatorsContainer ||
+          images.length === 0 || !expandedView || !expandedImage
         ) {
-          console.warn(
-            "Coverflow gallery elements not found or no images provided."
-          );
+          console.warn( "Coverflow gallery elements not found or no images provided." );
           return;
         }
 
@@ -1621,7 +1604,7 @@
 
             const img = document.createElement("img");
             img.src = imgData.src;
-            img.alt = imgData.alt;
+            img.alt = imgData.alt; 
             img.loading = "lazy";
 
             const shineOverlay = document.createElement("div");
@@ -1634,7 +1617,7 @@
             item.addEventListener("click", () => {
               if (index === currentIndex) {
                 expandedImage.src = imgData.src;
-                expandedImage.alt = imgData.alt;
+                expandedImage.alt = imgData.alt; 
                 expandedView.classList.add("active");
               } else {
                 goToIndex(index);
@@ -1664,11 +1647,7 @@
             let newX, newZ, newRotateY, newOpacity, newScale;
 
             if (i === currentIndex) {
-              newX = 0;
-              newZ = 150;
-              newRotateY = 0;
-              newOpacity = 1;
-              newScale = 1;
+              newX = 0; newZ = 150; newRotateY = 0; newOpacity = 1; newScale = 1;
               item.classList.add("active");
             } else {
               item.classList.remove("active");
@@ -1688,9 +1667,7 @@
         }
 
         function updateIndicators() {
-          const indicators = indicatorsContainer.querySelectorAll(
-            ".coverflow-indicator"
-          );
+          const indicators = indicatorsContainer.querySelectorAll( ".coverflow-indicator" );
           indicators.forEach((indicator, index) => {
             indicator.classList.toggle("active", index === currentIndex);
           });
@@ -1717,19 +1694,13 @@
         startAutoRotate();
 
         prevBtn.addEventListener("click", () => {
-          stopAutoRotate();
-          goToIndex(currentIndex - 1);
-          startAutoRotate();
+          stopAutoRotate(); goToIndex(currentIndex - 1); startAutoRotate();
         });
         nextBtn.addEventListener("click", () => {
-          stopAutoRotate();
-          goToIndex(currentIndex + 1);
-          startAutoRotate();
+          stopAutoRotate(); goToIndex(currentIndex + 1); startAutoRotate();
         });
 
-        const galleryContainer = document.querySelector(
-          ".coverflow-gallery-container"
-        );
+        const galleryContainer = document.querySelector( ".coverflow-gallery-container" );
         if (galleryContainer) {
           galleryContainer.addEventListener("mouseenter", stopAutoRotate);
           galleryContainer.addEventListener("mouseleave", startAutoRotate);
@@ -1738,18 +1709,13 @@
         document.addEventListener("keydown", (e) => {
           if (expandedView.classList.contains("active")) return;
           const galleryRect = carousel.getBoundingClientRect();
-          const isVisible =
-            galleryRect.top < window.innerHeight && galleryRect.bottom >= 0;
+          const isVisible = galleryRect.top < window.innerHeight && galleryRect.bottom >= 0;
           if (!isVisible) return;
 
           if (e.key === "ArrowLeft") {
-            stopAutoRotate();
-            goToIndex(currentIndex - 1);
-            startAutoRotate();
+            stopAutoRotate(); goToIndex(currentIndex - 1); startAutoRotate();
           } else if (e.key === "ArrowRight") {
-            stopAutoRotate();
-            goToIndex(currentIndex + 1);
-            startAutoRotate();
+            stopAutoRotate(); goToIndex(currentIndex + 1); startAutoRotate();
           }
         });
       }
@@ -1765,16 +1731,13 @@
         startButton.addEventListener("click", function () {
           audio.load();
           welcomeOverlay.style.animation = "fadeOut 1s forwards";
-          audio
-            .play()
-            .then(() => {
-              createFlowerBurst();
+          audio.play()
+            .then(() => { 
+              createGentleFlowerIntro(); // Corrected to use gentle intro
             })
             .catch((e) => console.warn("Audio playback failed:", e));
           setTimeout(() => {
-            if (welcomeOverlay.parentNode) {
-              welcomeOverlay.remove();
-            }
+            if (welcomeOverlay.parentNode) { welcomeOverlay.remove(); }
           }, 1000);
         });
 
